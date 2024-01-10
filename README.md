@@ -1,1 +1,1 @@
-The the complete JavaScript course
+The complete JavaScript course, Jonas Schmedtmann
