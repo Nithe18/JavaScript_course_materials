@@ -234,7 +234,7 @@ const nitheesh = {
 console.log(nitheesh);
 
 console.log(nitheesh.lastName); // dot notation
-console.log(nitheesh['lastName']); // bracket notation
+console.log(nitheesh['lastName']); // bracket notation the property name should be a string
 
 const nameKey = 'Name'; // we can use variables to access the properties of an object
 
