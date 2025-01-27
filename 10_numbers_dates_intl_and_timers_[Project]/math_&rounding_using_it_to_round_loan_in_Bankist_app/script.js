@@ -285,7 +285,7 @@ console.log(Number.isInteger(23));
 console.log(Number.isInteger(23.0));
 console.log(Number.isInteger(23 / 0));
 */
-/*
+
 console.log(Math.sqrt(25));
 console.log(25 ** (1 / 2)); // same findng squre root but without using the sqrt() function
 console.log(8 ** (1 / 3)); // cube root
@@ -328,82 +328,3 @@ console.log((2.7).toFixed(0));
 console.log((2.7).toFixed(3));
 console.log((2.347).toFixed(2));
 console.log(+(2.347).toFixed(3)); // if we want to convert it to a number from string
-*/
-/*
-// The remainder operator
-
-console.log(5 % 2);
-console.log(5 / 2); // 5 = 2 * 2 + 1
-
-console.log(8 % 3);
-console.log(8 / 3); // 8  = 2 * 3 + 2
-
-console.log(6 % 2);
-console.log(6 / 2);
-
-// Creating a function to check if a number is even
-const isEven = n => n % 2 === 0;
-console.log(isEven(8));
-console.log(isEven(23));
-console.log(isEven(514));
-
-// using the same operator to change every 2nd and 3rd row of the movements
-
-labelBalance.addEventListener('click', function () {
-  [...document.querySelectorAll('.movements__row')].forEach(function (row, i) {
-    if (i % 2 === 0) row.style.backgroundColor = 'orangered';
-
-    if (i % 3 === 0) row.style.backgroundColor = 'blue';
-  });
-});
-*/
-/*
-// Numeric Separators
-
-// 287,460,000,000
-
-const diameter = 287_460_000_000;
-console.log(diameter);
-
-const price = 345_99;
-console.log(price);
-
-const transferFee1 = 15_00;
-const transferFee2 = 1_500;
-
-const PI = 3.1415; // can't do like 3_.1415
-console.log(PI);
-
-console.log(Number('2300_000')); // numeric separators cannot be used in numbers which are strings
-console.log(parseInt('230_000')); // if parseInt is used it logs the numbers till the underscore and everything else will be ignored
-*/
-
-//Working with BigInt
-// JavaScript's default max safe number
-console.log(2 ** 53 - 1);
-console.log(Number.MAX_SAFE_INTEGER);
-
-// using the bigint
-console.log(430920287548888892759827n);
-console.log(BigInt(48384302));
-
-//Operations
-console.log(1000n + 1000n);
-console.log(124978524715950714527529574254296n * 2945724562895n);
-// console.log(Math.sqrt(16n)); //Math operator wont work with BigInt
-
-const huge = 202583571087544597574n;
-const num = 23;
-console.log(huge * BigInt(num)); //console.log(huge * num); won't work as bigInt and normal number cannot be mixed
-
-// Exceptions
-console.log(20n > 15);
-console.log(20n === 20);
-console.log(typeof 20n);
-console.log(20n == 20);
-
-console.log(huge + 'is REALLY BIG!!');
-
-// Divisions
-console.log(11n / 3n);
-console.log(10 / 3);
